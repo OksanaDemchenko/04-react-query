@@ -1,0 +1,26 @@
+.toast {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #d32f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 12px;
+  height: 12px;
+}
