@@ -7,7 +7,8 @@ import MovieModal from "../MovieModal/MovieModal";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import Pagination from "../Pagination/Pagination";
-import type { Movie, FetchMoviesResponse } from "../../types/movie";
+import type { FetchMoviesResponse } from "../../services/movieService";
+import type { Movie } from "../../types/movie";
 import { fetchMovies } from "../../services/movieService";
 import styles from "./App.module.css";
 
@@ -21,6 +22,7 @@ export default function App() {
     queryFn: () => fetchMovies(query, page),
     enabled: !!query,
     staleTime: 1000 * 60 * 5,
+    placeholderData: (previousData) => previousData,
   });
 
 
